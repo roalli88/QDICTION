@@ -1,0 +1,4 @@
+include qdiction/nltk_data/*
+include README.rst
+include LICENSE
+include requirements.txt

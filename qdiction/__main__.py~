@@ -1,0 +1,31 @@
+from .dict_project import dict_ui
+
+import sys
+from PyQt5.QtWidgets import (QMainWindow,
+                             QApplication,
+                             QMessageBox,
+                             QDialog,
+                             QListWidget,
+                             QVBoxLayout,
+                             QTextBrowser,
+                             )
+from PyQt5.QtGui import QIcon
+from PyQt5.QtCore import QSize
+from .dictionary_auto_gen import *
+from collections import deque
+from nltk.corpus import wordnet as wn
+from os import path
+import nltk
+
+def main():
+    curr_dir = path.dirname(__file__)
+    path_to_nltk = path.join(curr_dir, 'nltk_data')
+    app = QApplication(sys.argv)
+    f = dict_ui()
+    f.show()
+    sys.setswitchinterval(0.006)
+    sys.exit(app.exec_())
+
+if __name__ == '__main__':
+    main()
+    
