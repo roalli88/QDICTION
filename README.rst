@@ -15,4 +15,4 @@ Contributing
 ============
 
 Submit bug reports and issues to
-`github issues <https://github.com/roalli88/DICTIONARY/issues>_`
+`github issues <https://github.com/roalli88/QDICTION/issues>_`
