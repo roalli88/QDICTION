@@ -4,7 +4,7 @@ QDiction
 
 Author
 ======
-By Rasaq O Alli - https://github.com/roalli88
+By Rasaq O Alli
 
 About
 =====
