@@ -1,13 +1,5 @@
 #!/usr/bin/python3
-# Author: Rasaq Alli
-# Date  : 20/03/2021
-# License: <----------TODO---------------->
 
-
-# This is the main dictionary package and requires python3 or above
-
-# The dictionary_auto_gen module was generated with pyuic5
-#      ----> Include nltk setup at build stage
 from collections import deque
 from nltk.corpus import wordnet as wn
 import sys
@@ -23,8 +15,6 @@ from os import path
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QSize
 from .dictionary_auto_gen import *
-
-
 
 
 class dict_ui(QMainWindow):
@@ -75,7 +65,7 @@ class dict_ui(QMainWindow):
         self.ui.textBrowser.setText("")
         self.get_defs(search_word)
 
-    def get_defs(self, search_word):
+    def get_defs(self, search_word) -> None:
         ''' displays all definitions for the search word '''
         if search_word:
             make_synset = wn.synsets(search_word)
@@ -122,7 +112,7 @@ class dict_ui(QMainWindow):
             pass
 
     def get_related_words(self, synset, search_word):
-        '''returns a string consisting of words related to 
+        '''returns a string consisting of words related to
         search word
         '''
 
