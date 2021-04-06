@@ -9,7 +9,22 @@ By Rasaq O Alli - https://github.com/roalli88
 About
 =====
 **QDiction** is a lightweight minimal dictionary based on wordnet. Search results are classified (where appropriate) as antonyms,
-synonyms or related words. 
+synonyms or related words.
+
+Usage
+=====
+After a successful installation simply launch **"qdiction"** from a terminal.
+
+Useful information
+==================
+
+On the first run qdiction will download the "wordnet" file and save
+it in the user's home directory. It will be installed in a folder
+named "nltk_data". Therefore, if you later wish to uninstall
+qdiction, **first** use
+"pip uninstall qdiction" or "pip3 uninstall qdiction" and **second** remove the nltk_data folder from
+your home directory.
+
 
 Contributing
 ============

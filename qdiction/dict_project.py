@@ -10,7 +10,6 @@
 #      ----> Include nltk setup at build stage
 from collections import deque
 from nltk.corpus import wordnet as wn
-
 import sys
 from PyQt5.QtWidgets import (QMainWindow,
                              QApplication,

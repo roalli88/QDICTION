@@ -1,19 +1,16 @@
 from .dict_project import dict_ui
-
+from pathlib import Path
+import nltk
 import sys
 from PyQt5.QtWidgets import (
     QApplication
 )
 
 
-from os import path
-import nltk
-
-
 def main():
-    curr_dir = path.dirname(__file__)
-    path_to_nltk = path.join(curr_dir, 'nltk_data')
-    nltk.data.path.append(path_to_nltk)
+    download_status = nltk.downloader.Downloader()
+    if not download_status.is_installed('wordnet'):
+        nltk.download('wordnet', download_dir=Path.home())
     app = QApplication(sys.argv)
     f = dict_ui()
     f.show()

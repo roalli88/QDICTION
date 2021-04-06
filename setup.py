@@ -11,20 +11,20 @@ setup(
     license="GPL.v.3",
     keywords="dictionary wordnet english",
     project_urls={
-        "Source Code": "https://github.com/roalli88/DICTIONARY"
+        "Source Code": "https://github.com/roalli88/"
         },
-    packages=["qdiction", "qdiction.icons", "qdiction.nltk_data"],
+    packages=['qdiction', 'qdiction.icons'],
     install_requires=["PyQt5 >= 5.10", "nltk"],
     python_requires=">=3.6",
     package_data={
         "qdiction.icons": ["*.png"],
-        "qdiction.nltk_data": ["*"],
         "": ["*.txt", "*.rst"],
         },
     entry_points={
         "console_scripts": [
             "qdiction = qdiction.__main__:main"
             ]
-        }
+        },
+
 
 )
