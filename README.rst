@@ -15,6 +15,10 @@ Usage
 =====
 After a successful installation simply launch **"qdiction"** from a terminal.
 
+Installation
+============
+On a computer with python3.6+ and pip, installation is as simple as running "pip install qdiction" with permissions.
+
 Useful information
 ==================
 
