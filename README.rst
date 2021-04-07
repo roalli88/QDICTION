@@ -11,13 +11,15 @@ About
 **QDiction** is a lightweight minimal dictionary based on wordnet. Search results are classified (where appropriate) as antonyms,
 synonyms or related words.
 
-Usage
-=====
-After a successful installation simply launch **"qdiction"** from a terminal.
 
 Installation
 ============
-On a computer with python3.6+ and pip, installation is as simple as running "pip install qdiction" with permissions.
+On a linux computer with python3.6+ and pip, installation is as simple as running "pip install qdiction" with permissions.
+
+Usage
+=====
+After a successful installation simply launch **"qdiction"** from a linux terminal.
+
 
 Useful information
 ==================
