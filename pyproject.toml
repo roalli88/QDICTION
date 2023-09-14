@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "nltk", "PyQt6"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "QDiction" 
+version = "1.0.1"
+authors = [
+  { name="ro_alli", email="ro_alli@protonmail.com" },
+]
+description = "A dictionary application based on wordnet and NLTK"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: GPL v3",
+    "Operating System :: Linux",
+]
+[project-scripts]
+qdiction="qdiction:__main__.py"

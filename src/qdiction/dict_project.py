@@ -59,14 +59,18 @@ class dict_ui(QMainWindow):
         self.show()
 
     def display_defs(self) -> None:
+
         '''This is the driver for displaying definitions in \
         the textLabel area'''
+
         search_word = self.ui.lineEdit.text()
         self.ui.textBrowser.setText("")
         self.get_defs(search_word)
 
     def get_defs(self, search_word) -> None:
-        ''' displays all definitions for the search word '''
+
+        ''' This method displays all definitions for the searched word  '''
+
         if search_word:
             make_synset = wn.synsets(search_word)
             synonyms = self.get_synonyms(self.stripper
@@ -133,13 +137,13 @@ class dict_ui(QMainWindow):
                 if (syn[0] != word)]
         return ', '.join(set(syns))
 
-    def get_antonyms(self, lemma_set) -> list:
+    def get_antonyms(self, lemma_set):
 
         antonyms = [lemma.antonyms() for lists in lemma_set for lemma in
                     lists if lemma.antonyms()]
         return ', '.join(set([lemma[0].name() for lemma in antonyms]))
 
-    def stripper(self, synset) -> iter:
+    def stripper(self, synset) :
         '''Strips a synset object to return tuples of \
         name, pos, number for extraction
         '''
@@ -188,9 +192,10 @@ class dict_ui(QMainWindow):
 
                                    </head>
                                    <body>
-                                     <p style='font-weight: 450;
+                                    <p style='font-weight: 450;
                                          text-align: center;'>
-                                         <b>QDiction</b> Version 1.0</p>
+                                         <b>QDiction</b> Version 1.0.1
+                                    </p>
                                      <p style='color: blue; text-align:
                                        center'>
                                        Copyright (c) 2021 Rasaq O Alli</p>
@@ -221,7 +226,7 @@ class dict_ui(QMainWindow):
                                      <blockquote>
                                          <i>Natural Language
                                          Processing with Python</i>.
-                                         O’Reilly Media Inc.</p>Bird, Steven,
+                                         O’Reilly Media Inc. </p>Bird, Steven,
                                          Edward Loper
                                          and
                                          Ewan Klein (2009)<br><br>

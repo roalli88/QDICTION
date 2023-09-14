@@ -1,10 +1,9 @@
-============
 QDiction
 ============
 
 Author
 ======
-By Rasaq O Alli
+Rasaq O Alli
 
 About
 =====
@@ -28,12 +27,12 @@ On the first run qdiction will download the "wordnet" file and save
 it in the user's home directory. It will be installed in a folder
 named "nltk_data". Therefore, if you later wish to uninstall
 qdiction, **first** use
-"pip uninstall qdiction" or "pip3 uninstall qdiction" and **second** remove the nltk_data folder from
+"pip uninstall qdiction" and **second** remove the nltk_data folder from
 your home directory.
 
 
 Contributing
 ============
 
-Submit bug reports and issues to
+Please submit bug reports and issues to
 `github issues <https://github.com/roalli88/QDICTION/issues>_`
