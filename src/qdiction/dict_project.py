@@ -194,7 +194,7 @@ class dict_ui(QMainWindow):
                                    <body>
                                     <p style='font-weight: 450;
                                          text-align: center;'>
-                                         <b>QDiction</b> Version 1.0.1
+                                         <b>QDiction</b> Version 2.0.1
                                     </p>
                                      <p style='color: blue; text-align:
                                        center'>
