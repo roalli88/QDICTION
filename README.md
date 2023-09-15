@@ -7,17 +7,17 @@ Rasaq O Alli
 
 About
 =====
-**QDiction** is a lightweight minimal dictionary based on wordnet. Search results are classified (where appropriate) as antonyms,
+**QDiction** is a lightweight minimal dictionary based on wordnet provided by https://wordnet.princeton.edu and language processing 
+toolkit is sourced from https://www.nltk.org/. Search results are classified (where appropriate) as antonyms,
 synonyms or related words.
 
 
 Installation
 ============
-On a linux computer with python3.6+ and pip, installation is as simple as running "pip install qdiction" with permissions.
-
+On a linux computer with python3.6+ and pip, installation is as simple as running "pip install qdiction". 
 Usage
 =====
-After a successful installation simply launch **"qdiction"** from a linux terminal.
+After a successful installation, the app can be launched using "python -m qdiction". 
 
 
 Useful information
