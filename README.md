@@ -15,6 +15,8 @@ synonyms or related words.
 Installation
 ============
 On a linux computer with python3.6+ and pip, installation is as simple as running "pip install qdiction". 
+
+
 Usage
 =====
 After a successful installation, the app can be launched using "python -m qdiction". 
