@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+'''
+This file handles the display logic for this app, including fetching search results and 
+displaying it back to the user.
+'''
 
 from collections import deque
 from nltk.corpus import wordnet as wn
